@@ -136,11 +136,11 @@ nav{
 }
 
 .text{
-    min-height: 20vh;
+    min-height: 24%;
     position: relative;
     background: rgb(14, 15, 77);
     width: 65%;
-    height: 24%;
+    height: auto;
     padding: 1.5% 25px 0px 1.5%;
     margin: -7vh 15% 0% 50px;
     text-align: center;
