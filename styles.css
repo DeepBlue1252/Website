@@ -192,7 +192,7 @@ nav{
     font-family: 'Cinzel';
     font-size: large;
     color: rgb(136, 136, 136);
-    height: auto;
+    height: fit-content;
     margin-bottom: 10%;
 }
 
@@ -202,8 +202,8 @@ nav{
     padding: 1% 0% 3% 0%;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
     background: rgb(18, 18, 18);
-    height: auto;
-    min-height: 15%;
+    height: fit-content;
+    min-height: 18%;
 
 }
 
