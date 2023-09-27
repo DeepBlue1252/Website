@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0 0 0 0;
     box-sizing: border-box;
-
 }
 
 
@@ -17,28 +16,24 @@
 
 .Cover{
     min-height: 100%;
-
     width: 100%;
     position: relative;
     overflow-y: scroll;
-
 }
 
 .creations-cover{
     min-height: 250%;
     width: 100%;
     position: relative;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow:hidden;
 }
 
 .about-cover{
     min-height: 300%;
-
     width: 100%;
     position: relative;
     overflow-y: scroll;
-
 }
 
 .image-background{
@@ -202,7 +197,7 @@ nav{
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
     background: rgb(18, 18, 18);
     height: fit-content;
-    min-height: 18%;
+    min-height: 20%;
 
 }
 
