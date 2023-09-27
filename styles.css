@@ -117,7 +117,8 @@ nav{
 .symbol{
     align-items: center;
     display: flex;
-    padding-left: 18%;
+    margin: auto;
+    padding-left: 15%;
     padding-top: 5%;
 }
 
@@ -136,13 +137,13 @@ nav{
 }
 
 .text{
-    min-height: 24%;
+    min-height: 20vh;
     position: relative;
     background: rgb(14, 15, 77);
     width: 65%;
     height: auto;
-    padding: 1.5% 25px 0px 1.5%;
-    margin: -7vh 15% 0% 50px;
+    padding: 1.5% 10% 0.5% 1%;
+    margin: 0% 5% 5% 5%;
     text-align: center;
     font-family: 'Cinzel';
     font-size: large;
@@ -191,20 +192,26 @@ nav{
     font-family: 'Cinzel';
     font-size: large;
     color: rgb(136, 136, 136);
+    height: auto;
+    margin-bottom: 10%;
 }
 
 .projects div{
     margin-bottom: 5%;
     margin-top: 3%;
-    padding: 3% 0% 3% 0%;
+    padding: 1% 0% 3% 0%;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
     background: rgb(18, 18, 18);
-    height: 17%;
+    height: auto;
+    min-height: 15%;
+
 }
 
 .projects div img{
+    margin: auto;
     padding-right: 70%;
     transition: 0.7s;
+    padding-top: 2%;
 }
 
 .projects div img:hover{
@@ -215,6 +222,7 @@ nav{
 .projects div p{
     padding-left: 35%;
     margin-top: -19%;
+    padding-bottom: 3%;
     width: 95%;
 }
 
