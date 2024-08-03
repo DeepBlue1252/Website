@@ -1,45 +1,29 @@
-*{
+* {
     padding: 0;
-    margin: 0 0 0 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-
+body {
+    font-family: 'Cinzel', serif;
+    background-color: rgb(18, 18, 18);
+    color: rgb(136, 136, 136);
+}
 
 .header {
     background: rgb(18, 18, 18);
-    margin: 0px 0px 0px 0px;
-    position: relative;
     height: 12vh;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
 }
 
-.Cover{
-    min-height: 100%;
-    width: 100%;
-    position: relative;
-    overflow-y: scroll;
+.Cover, .creations-cover, .about-cover, .intro, .exhibit, .showcase-header {
+    background-color: rgb(18, 18, 18);
 }
 
-.creations-cover{
-    min-height: 250%;
+.image-background {
     width: 100%;
-    position: relative;
-    overflow-y: auto;
-    overflow:hidden;
-}
-
-.about-cover{
-    min-height: 300%;
-    width: 100%;
-    position: relative;
-    overflow-y: scroll;
-}
-
-.image-background{
-    width: 100%;
-    min-height: 100%;
-    background-image: linear-gradient(rgba(209, 33, 33, 0) 80%,rgb(18, 18, 18) 100%),url("pexels-thach-tran-756856.jpg");
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(209, 33, 33, 0) 80%, rgb(18, 18, 18) 100%), url("pexels-thach-tran-756856.jpg");
     background-position: center;
     background-size: cover;
     transition: 0.7s;
@@ -49,7 +33,7 @@
     transform: scale(1.05);
 }
 
-nav{
+nav {
     display: flex;
     padding: 2.5% 4%;
     justify-content: space-between;
@@ -57,204 +41,125 @@ nav{
     transition: 0.7s;
 }
 
-.nav:hover{
-    transform: translate(20px, 10%);
-}
-
-.nav img{
-    align-items: center;
+.nav img {
     height: 150px;
 }
 
-.resume:hover{
+.resume:hover {
     text-decoration: underline;
 }
 
-.nav-links{
+.nav-links {
     flex: 1;
     text-align: right;
 }
 
-.nav-links ul li{
+.nav-links ul {
     list-style: none;
+}
+
+.nav-links ul li {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
     transition: 0.7s;
 }
 
-.nav-links ul li:hover{
+.nav-links ul li:hover {
     text-decoration: underline;
 }
 
-.nav{
+.nav a, .resume a {
     text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    color: rgb(136, 136, 136)
-}
-.nav-links ul li a{
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
     color: rgb(136, 136, 136);
-}
-
-.resume a{
-    text-decoration: none;
-    color: black;
     text-transform: uppercase;
-    color: rgb(136, 136, 136);
 }
 
-
-.symbol{
-    align-items: center;
+.symbol {
     display: flex;
-    margin: auto;
-    padding-left: 15%;
+    justify-content: center;
     padding-top: 5%;
 }
 
-.intro{
+.intro {
     min-height: 100vh;
-    background-color: rgb(18, 18, 18);
+    text-align: center;
+    padding: 5% 10%;
 }
 
-.text-header{
-    padding-top: 5%;
-    padding-left: 10%;
+.text-header {
     font-size: xx-large;
     margin-bottom: 5%;
-    color: rgb(136, 136, 136);
-
 }
 
-.text{
-    min-height: 20vh;
-    position: relative;
+.text {
     background: rgb(14, 15, 77);
     width: 65%;
-    height: auto;
+    margin: 0 auto 5%;
     padding: 1.5% 10% 0.5% 1%;
-    margin: 0% 5% 5% 5%;
-    text-align: center;
-    font-family: 'Cinzel';
-    font-size: large;
-    color: rgb(136, 136, 136);
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
 }
 
-
-.portrait{
-    margin: -225px 75px 75px 800px;
+.portrait {
+    margin: 0 auto;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
 }
 
-
-.showcase-header{
-    margin-top: -42vh;
-    padding-left: 22%;
+.showcase-header {
     font-size: xx-large;
-    margin-bottom: 0%;
-    color: rgb(136, 136, 136);
+    margin-bottom: 2%;
+    text-align: center;
 }
 
-.exhibit{
-    margin-left: 7%;
-    margin-top: 2vh;
+.exhibit {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
-    width: 52%;
-    padding: 2vh 3vh 2vh;
-
+    padding: 2vh 3vh;
 }
 
-.exhibit img{
-    margin: 0px 1vh 0px;
+.exhibit img {
+    margin: 1vh;
     transition: 0.4s;
 }
 
-.exhibit img:hover{
+.exhibit img:hover {
     transform: scale(1.1);
 }
 
-.projects{
-    margin-left: 13%;
-    text-align: center;
-    width: 75%;
-    position: relative;
-    font-family: 'Cinzel';
-    font-size: large;
-    color: rgb(136, 136, 136);
-    height: fit-content;
-    margin-bottom: 10%;
-}
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
 
-.projects div{
-    margin-bottom: 5%;
-    margin-top: 3%;
-    padding: 1% 0% 3% 0%;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
-    background: rgb(18, 18, 18);
-    height: fit-content;
-    min-height: 20%;
+    .symbol {
+        padding-left: 0;
+    }
 
-}
+    .text {
+        width: 90%;
+    }
 
-.projects div img{
-    margin: auto;
-    padding-right: 70%;
-    transition: 0.7s;
-    padding-top: 2%;
-}
+    .portrait {
+        width: 90%;
+        height: auto;
+    }
 
-.projects div img:hover{
-    padding-left: 6%;
-    transform: scale(1.1);
-}
+    .showcase-header {
+        padding-left: 0;
+    }
 
-.projects div p{
-    padding-left: 35%;
-    margin-top: -19%;
-    padding-bottom: 3%;
-    width: 95%;
-}
+    .exhibit {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.first-project{
-    width:100%;
-}
-
-.cover{
-    height: 100%;
-}
-.creations-cover{
-    height:200%;
-}
-
-.slide{
-    text-align: center;
-    background: rgb(18, 18, 18);
-    width: 42.5%;
-    min-height: 75%;
-    margin-top: 2%;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
-    margin-left: 4%;
-    margin-bottom: 5%;
-
-}
-
-.Personal-Slides{
-    min-height: 100%;
-    overflow-x: auto;
-    width: 200%;
-    
-}
-
-.second-container{
-    transform: rotate(-90deg) translateX();
-    overflow-y: scroll;    
-
-}
-::-webkit-scrollbar{
-    display: none;
+    .exhibit img {
+        width: 100%;
+        height: auto;
+    }
 }
