@@ -16,10 +16,8 @@ body {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgb(0, 0, 0);
 }
 
-.Cover, .creations-cover, .about-cover {
-    width: 100%;
-    position: relative;
-    overflow-y: auto;
+.Cover, .creations-cover, .about-cover, .intro, .exhibit, .showcase-header {
+    background-color: rgb(18, 18, 18);
 }
 
 .image-background {
@@ -85,7 +83,6 @@ nav {
 
 .intro {
     min-height: 100vh;
-    background-color: rgb(18, 18, 18);
     text-align: center;
     padding: 5% 10%;
 }
@@ -111,6 +108,7 @@ nav {
 .showcase-header {
     font-size: xx-large;
     margin-bottom: 2%;
+    text-align: center;
 }
 
 .exhibit {
