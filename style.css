@@ -1,0 +1,329 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    height: 100%;
+    width:cover;
+    padding-left: center;
+}
+
+header {
+    background-color: #101010;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header-border {
+    position: fixed;
+    top: 1rem;
+    height: 2rem;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    transition: width 0.5s, left 0.5s, opacity 0.5s;
+    opacity: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.476) 0%, rgba(0, 0, 0, 1) 40%);
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.section.visible {
+    opacity: 1;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.intro-box {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.portfolio-image {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    border: 2px solid #ffffff;
+}
+
+.intro-text h1 {
+    margin: 0;
+    font-size: 3.5rem; /* Adjust the size as needed */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    opacity: 0;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: top;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.section.visible .grid {
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.grid-item {
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 2px solid #0A4E96; /* Darker modern border for icons */
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #0a4e9651; /* Filled darker blue color */
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section.visible .experience-item.left {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.section.visible .experience-item.right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.experience-item.left {
+    transform: translateX(-100%);
+}
+
+.experience-item.right {
+    transform: translateX(100%);
+}
+
+.experience-image {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #101010;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Fade-in animations for projects */
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid-item.top-row {
+    animation: fadeInTop 1s forwards;
+    background-color: #0a4e9651; /* Filled darker blue color */
+    border: 2px solid #ffffff;
+}
+
+.grid-item.bottom-row {
+    animation: fadeInBottom 1s forwards;
+    background-color: #0a4e9651; /* Filled darker blue color */
+    border: 2px solid #ffffff;
+}
+.grid-item img{
+    width: 100px;
+}
+
+/* About Me section */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.about-portrait {
+    max-width: 250px;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    height: auto; /* Ensure the portrait height is auto */
+    margin-top: 5%;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.about-description {
+    background-color: #083a6b;
+    border: 2px solid #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    opacity: 0;
+}
+
+.about-lists {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.panel-left, .panel-right {
+    background-color: #083a6b;
+    border: 2px solid #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    opacity: 0;
+    width: calc(50% - 0.5rem); 
+    height: auto; 
+}
+
+.panel-left {
+    transform: translateX(-100%);
+    margin-right: 4%;
+}
+
+.panel-right {
+    transform: translateX(100%);
+}
+
+.section.visible .about-portrait,
+.section.visible .about-description,
+.section.visible .panel-left,
+.section.visible .panel-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-portrait {
+        max-width: 100%;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .panel-left, .panel-right {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+
+
+/* Contact section */
+.contact-item {
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #0a4e9651; 
+    border: 2px solid #ffffff;
+}
+
+.contact-item h3 {
+    margin: 0;
+}
+
+.contact-item p {
+    margin: 0.5rem 0 0;
+}
+
+.project-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    max-width: cover;
+    display: inline-block;
+}
