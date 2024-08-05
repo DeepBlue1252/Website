@@ -1,62 +1,202 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <section class="Cover">
-        <div class="image-background">
-          <div class="header">
-            <nav>
-              <div class="resume">
-                <a href="https://github.com/DeepBlue1252/Website/blob/main/BrianLarosiliereSoftwareDeveloperResumeREVIEWED%20(2).pdf"><h1>Resume</h1></a>
-              </div>
-              <div class="nav-links">
-                <ul>
-                  <li><a href="index.html"><h2>Home</h2></a></li>
-                  <li><a href="creations.html"><h2>Creations</h2></a></li>
-                  <li><a href="abouts.html"><h2>My Info</h2></a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-          <div class='symbol'>
-            <img src="CSSbutton.png" alt="Computer Science Student" height="500px">
-          </div>
-        </div>
-      </section>
-      <section class="Intro">
-        <div class="text-header">
-          <h3>I am</h3>
-          <h1>Brian Larosiliere</h1>
-        </div>
-        <div class='text'>
-          <p>
-            Welcome to my website! Here, I'll add new things I learn and display my projects. I recently graduated from 
-            the University of Rhode Island with a degree in Computer Science. This website is made using HTML and CSS. 
-            On this page, I plan to share all my new creations and any relevant updates about me. I created this website 
-            to organize my thoughts, plans, and ideas, as well as to help me land a job or advance my career.
-          </p>
-        </div>
-        <div class='portrait'>
-          <img src="pladport.PNG" alt="Portrait" height="500px">
-        </div>
-        <div class="showcase">
-          <div class="showcase-header">
-            <h2>Recent Projects</h2>
-          </div>
-          <div class="exhibit">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
             <ul>
-              <li><a href="https://github.com/DeepBlue1252/Alarm1"><img src="alarmIcon.png" height="200px" alt="Alarm Project"></a></li>
-              <li><a href="https://github.com/DeepBlue1252/Programs/tree/main/SortingAlgorithmSpeed"><img src="sortingIcon.png" height="200px" alt="Sorting Algorithm Speed Project"></a></li>
-              <li><a href="https://github.com/DeepBlue1252/Programs/tree/main/AnimeCSVAnalysis"><img src="animeimg.png" height="200px" alt="Anime CSV Analysis Project"></a></li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#projects">Creations</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-          </div>
+        </nav>
+        <div id="header-border" class="header-border"></div>
+    </header>
+
+    <section id="intro" class="section">
+        <div class="content">
+            <div class="intro-box">
+                <img src="standingGradPic.jpg" alt="Portfolio Image" class="portfolio-image">
+                <div class="intro-text">
+                    <h1>Hi,</h1>
+                    <h1>I'm Brian,</h1>
+                    <h1>a Software Developer</h1>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
-  </body>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content about-content">
+            <img src="walkingGradPic.jpg" alt="Self Portrait" class="about-portrait">
+            <div class="about-right">
+                <div class="about-description">
+                    <p>Welcome to my portfolio website! I’m Brian Larosiliere, a recent Computer Science graduate from the University of Rhode Island. Here, you’ll find a showcase of my projects and the latest things I’ve learned. This site, crafted with HTML and CSS, serves as a platform to present my work, share updates about my professional journey, and demonstrate my skills. I created this site to organize my projects, showcase my expertise, and advance my career in the tech industry.</p>
+                </div>
+                <div class="about-lists">
+                    <div class="panel-left">
+                        <h3>Courses Taken</h3>
+                        <ul>
+                            <li>Data Structures and Abstractions</li>
+                            <li>Software Engineering</li>
+                            <li>Programming for Data Science</li>
+                            <li>Game Development w/ Unity</li>
+                            <li>Machine Learning</li>
+                            <li>Operating Systems and Networks</li>
+                            <li>Design and Analysis of Algorithms</li>
+                            <!-- Add more classes as needed -->
+                        </ul>
+                    </div>
+                    <div class="panel-right">
+                        <h3>Languages Known</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>TypeScript/Javascript</li>
+                            <li>Pandas, Numpy, Matplotlib</li>
+                            <li>HTML & CSS</li>
+                            <!-- Add more languages as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="section">
+        <div class="content">
+            <div class="experience-item left">
+                <img src="uriITSDTeam.jpg" alt="IT Technician/Endpoint Support" class="experience-image">
+                <p>During my time at the University of Rhode Island, I gained valuable experience in two critical IT roles. As an IT Technician, I provided prompt and effective support for computing and networking issues, addressing user needs via phone, walk-in, and email. Transitioning to the Endpoint Support Member role, I focused on managing and maintaining computers through Azure and Active Directory, ensuring compliance with the university’s security policies and keeping all devices updated with the latest software. This experience honed my skills in both user support and IT infrastructure management.</p>
+            </div>
+            <div class="experience-item right">
+                <img src="libertySummitHackGroup.jpg" alt="Software Developer Intern at Liberty Mutual" class="experience-image">
+                <p>As a Software Developer Intern at Liberty Mutual, I collaborate with cross-functional teams to design, develop, and implement software solutions according to project requirements. I also debug and resolve software defects to ensure high-quality deliverables for clients. This role has enabled me to further develop my technical skills and gain practical experience in a professional setting.</p>
+            </div>
+            <div class="experience-item left">
+                <img src="hackDiversityTeam.PNG" alt="Hack Diversity" class="experience-image">
+                <p>My experience with Hack Diversity has been incredibly enriching and transformative. Through the program, I’ve had the opportunity to develop a range of technical skills and gain invaluable industry insights. The resources and mentorship provided have been instrumental in my growth, enabling me to work on real-world projects and connect with professionals in the tech community. This support has not only enhanced my technical abilities but also broadened my perspective, equipping me with the tools and confidence needed to excel in my career.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="content">
+            <div class="grid">
+                <div class="grid-item top-row">
+                    <img src="pixelDuck.png" alt="Project 1">
+                    <p class="project-description">For the Duck Tower Defense project, I designed the duck mechanics. I created a class diagram detailing duck spawning, destruction, and interactions with the player, towers, and tilemap. I also integrated how ducks impact the game's currency and health systems, ensuring their actions are well-integrated into gameplay.</p>
+                    <p class="tech-stack">LibGDX    Java    Eclipse IDE     Git</p>
+                </div>
+                <div class="grid-item top-row">
+                    <img src="swordIconWithBackground.png" alt="Project 2">
+                    <p class="project-description">
+                        This indie RPG project marks a milestone in my development journey. Using "GameCreator 2" for visual scripting, I enhanced my skills in game design, UI, and music integration. Crafting a compelling narrative and diverse character classes challenged my creativity. This project highlights my commitment to immersive gaming and showcases my growth as a developer.</p>
+                    <p class="tech-stack">Unity C#</p>
+                </div>
+                <div class="grid-item top-row">
+                    <img src="alarmIcon.png" alt="Project 3">
+                    <p class="project-description">This Python Alarm Clock app displays the current time and allows users to set multiple alarms, which are sorted by time. After an alarm sounds, it moves to the bottom of the list. The app uses the datetime, time, custom Tkinter, and winsound modules.</p>
+                    <p class="tech-stack">Tech Stack: React, Node.js</p>
+                </div>
+                <div class="grid-item bottom-row">
+                    <img src="sortingIcon.png" alt="Project 4">
+                    <p class="project-description">For my sophomore year final project, my partners and I created a program to compare sorting algorithms on different types of arrays. Users can choose from sorted, partially sorted, reversed, and random arrays, set the array length, and select a sorting algorithm. The program outputs the sorted array and the time taken to sort it.</p>
+                    <p class="tech-stack">Tech Stack: Java, Spring Boot</p>
+                </div>
+                <div class="grid-item bottom-row">
+                    <img src="animeimg.png" alt="Project 5">
+                    <p class="project-description">I've used data analysis and captivating visualizations to explore the connection between anime 
+                        series duration and viewer ratings, as well as the historical trends in anime's popularity.</p>
+                    <p class="tech-stack">Python    MatPlotLib  Pandas  Numpy</p>
+                </div>
+                <div class="grid-item bottom-row">
+                    <img src="icons8-x-ray-50.png" alt="Project 6">
+                    <p class="project-description">I collaborated on a web app for doctors to track patient information from COVID-19 x-ray exams. The app supports CRUD operations for radiology reports, with pages for viewing, managing, and detailing records. Built with the MERN stack (MongoDB, Express, React, Node.js), it ensures a seamless user experience.</p>
+                    <p class="tech-stack">MongoDB   Express React   Node.js</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>larosiliereb@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <h3><a href="https://www.linkedin.com/in/brian-larosiliere-bb31ba1ba/">LinkedIn</a></h3>
+            </div>
+            <div class="contact-item">
+                <h3><a href="https://github.com/brian">GitHub</a></h3>
+            </div>
+            <div class="contact-item">
+                <h3><a href="https://github.com/DeepBlue1252/Website/blob/main/BrianLarosiliereSoftwareDeveloperResumeREVIEWED%20(2).pdf">Resume</a></h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Brian's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <div id="cursor-light" class="cursor-light"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+            const headerBorder = document.getElementById('header-border');
+            const cursorLight = document.getElementById('cursor-light');
+
+            document.addEventListener('mousemove', (e) => {
+                cursorLight.style.left = e.pageX + 'px';
+                cursorLight.style.top = e.pageY + 'px';
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            document.addEventListener('scroll', function() {
+                const currentSection = [...sections].find(section => {
+                    const rect = section.getBoundingClientRect();
+                    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+                    return rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2;
+                });
+
+                if (currentSection) {
+                    const link = document.querySelector('nav ul li a'[href="#${currentSection.id}"]);
+                    const rect = link.getBoundingClientRect();
+                    headerBorder.style.width = rect.width + 'px';
+                    headerBorder.style.left = rect.left + 'px';
+                    headerBorder.style.opacity = '1';
+                } else {
+                    headerBorder.style.opacity = '0';
+                }
+            });
+        });
+    </script>
+</body>
 </html>
